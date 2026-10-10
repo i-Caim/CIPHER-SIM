@@ -49,6 +49,8 @@ body { font-size: 15px; line-height: 1.55; }
 .sw i.fx { background: var(--panel); box-shadow: inset 0 0 0 1px var(--line); }
 .sw i.snd { background: var(--volt); }
 
+.famHead p a { color: var(--volt); text-decoration: none; white-space: nowrap; }
+.famHead p a:hover { text-decoration: underline; }
 .item.soon { cursor: default; }
 .item.soon .name { color: var(--dim); }
 .item.soon .card { opacity: 0.4; }
@@ -206,6 +208,20 @@ html.gated, html.gated body { overflow: hidden; }
         <div class="card"><div class="logo"><span>DES</span></div><div class="facts"><span>Type: Symmetric</span><span>Category: Block</span><span>Loops: 16</span></div></div></a>
       <a class="item" href="aes-visualizer.html"><span class="name">AES</span>
         <div class="card"><div class="logo"><span>AES</span></div><div class="facts"><span>Type: Symmetric</span><span>Category: Block</span><span>Loops: 10 / 12 / 14</span></div></div></a>
+      <a class="item" href="tea.html"><span class="name">TEA</span>
+        <div class="card"><div class="logo"><span>TEA</span></div><div class="facts"><span>Type: Symmetric</span><span>Category: Block (almost Feistel)</span><span>Loops: 32</span></div></div></a>
+    </div>
+  </section>
+
+  <section class="fam" aria-labelledby="pubkey">
+    <div class="famHead"><h2 id="pubkey">Public key</h2><p>Chapter 4: one key to encrypt, another to decrypt. <a href="formulas.html">All the formulas →</a></p></div>
+    <div class="cards">
+      <a class="item" href="knapsack.html"><span class="name">Knapsack</span>
+        <div class="card"><div class="logo"><span>KNAPSACK</span></div><div class="facts"><span>Type: Public key</span><span>Category: Subset sum</span><span>Loops: 1 per weight</span></div></div></a>
+      <a class="item" href="rsa.html"><span class="name">RSA</span>
+        <div class="card"><div class="logo"><span>RSA</span></div><div class="facts"><span>Type: Public key</span><span>Category: Factoring</span><span>Loops: 1 per exponent bit</span></div></div></a>
+      <a class="item" href="diffie-hellman.html"><span class="name">Diffie-Hellman</span>
+        <div class="card"><div class="logo"><span class="long">DIFFIE-<br>HELLMAN</span></div><div class="facts"><span>Type: Key exchange</span><span>Category: Discrete log</span><span>Loops: 1 per exponent bit</span></div></div></a>
     </div>
   </section>
 
